@@ -3,3 +3,6 @@ A repo of Young's Tutorial Greek Reader from Archive.org's copy and OCR with man
 
 ## Progress
 3/172 (1.7%) texts done
+
+## License
+MIT License
