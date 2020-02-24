@@ -8,7 +8,7 @@
 A repo of Young's Tutorial Greek Reader from Archive.org's copy and OCR with manual correction https://archive.org/details/tutorialgreekrea00younuoft
 
 ## Progress
-3/172 (1.7%) texts done
+15/172 (8.72%) texts done
 
 ## License
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
