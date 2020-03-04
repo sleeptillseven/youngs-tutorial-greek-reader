@@ -1,6 +1,6 @@
 # Young's Tutorial Greek Reader
 
-A repository for a digitisation effort of _Young's Tutorial Greek Reader_.
+A repository for a digitisation effort of _Young's Tutorial Greek Reader_. A HTML version is provided [here](https://sleeptillseven.github.io/youngs-tutorial-greek-reader/).
 
 This text is being prepared as part of the [Greek Learner Texts Project](https://greek-learner-texts.org/).
 
