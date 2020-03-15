@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="grc">
+        <head>
+          <title>Young's Tutorial Greek Reader</title>
+          <meta charset="utf-8">
+          <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&amp;subset=greek,greek-ext" rel="stylesheet">
+          <link href="style.css" rel="stylesheet">
+        </head>
+    <body class="index">
+      <div class="container">
+        <center>
+        <h1>Young's Tutorial Greek Reader</h1>
+        <h3>Digitalized by Christoph Jasinski</h3>
+        </center>
+            <br/>
+            {%- for row in rows %}
+              {%- if  '.title' in row %}
+                </br></br><h2 lang="en">{{ row.strip().split(' ', 1)[1] }}</h2>
+              {%- elif  '.subtitle' in row %}
+                <h2 lang="en">{{ row.strip().split(' ', 1)[1] }}</h2></br></br>
+              {%- elif  '.head' in row %}
+                 <h4 class="chapter_ref" lang="en">{{ row.replace("head", "") }}</h4>
+              {%- else  %}
+                 <p>{{ row.strip().split(' ', 1)[1] }}</p>
+              {%- endif %}
+            {%- endfor %}
+            <br/>
+        <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        <p>The source is available at <a href="https://github.com/sleeptillseven/youngs-tutorial-greek-reader">https://github.com/sleeptillseven/youngs-tutorial-greek-reader</a>.</p>
+      </div>
+    </body>
+    </html>
