@@ -14,7 +14,7 @@ Scan is available on Archive.org: https://archive.org/details/tutorialgreekrea00
 
 ## Progress
 
-![Progress](https://progress-bar.dev/50/)
+![Progress](https://progress-bar.dev/55/)
 
 ## License
 
