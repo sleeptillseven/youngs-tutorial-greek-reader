@@ -4,10 +4,11 @@
           <title>Young's Tutorial Greek Reader</title>
           <meta charset="utf-8">
           <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&amp;subset=greek,greek-ext" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.min.css"/>
           <link href="style.css" rel="stylesheet">
         </head>
     <body class="index">
-      <div class="container">
+      <div class="container alpheios-enabled" lang="grc">
         <center>
         <h1>Young's Tutorial Greek Reader</h1>
         <h3>Digitalized by Christoph Jasinski</h3>
@@ -28,5 +29,22 @@
         <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
         <p>The source is available at <a href="https://github.com/sleeptillseven/youngs-tutorial-greek-reader">https://github.com/sleeptillseven/youngs-tutorial-greek-reader</a>.</p>
       </div>
+      <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+          import ("https://cdn.jsdelivr.net/npm/alpheios-embedded@latest/dist/alpheios-embedded.min.js").then(embedLib => {
+            window.AlpheiosEmbed.importDependencies({
+              mode: 'cdn'
+            }).then(Embedded => {
+              new Embedded({
+                clientId: 'greek_leaners_text_project'
+              }).activate();
+            }).catch(e => {
+              console.error(`Import of Alpheios embedded library dependencies failed: ${e}`)
+            })
+          }).catch(e => {
+            console.error(`Import of Alpheios Embedded library failed: ${e}`)
+          })
+        });
+      </script>
     </body>
     </html>
