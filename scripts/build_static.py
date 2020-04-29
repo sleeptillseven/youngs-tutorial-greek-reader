@@ -102,7 +102,10 @@ for WORK in WORK_LIST:
                         else:
                             if not chapter == "text":
                                 print("""    <div class="chapter">""", file=g)
-                                print(f"""      <h3 class="chapter_ref">{chapter} {parts[1]}</h3>""", file=g)
+                                if len(parts) > 1:
+                                    print(f"""      <h3 class="chapter_ref">{chapter}. {parts[1]}</h3>""", file=g)
+                                else:
+                                    print(f"""      <h3 class="chapter_ref">{chapter}.</h3>""", file=g)
                             else:
                                print("""    <div class="chapter">""", file=g) 
                     prev_chapter = chapter
@@ -115,16 +118,13 @@ for WORK in WORK_LIST:
                     else:
                         # HANDLE VERSE
                         if not (verse == "title" or chapter == "0" or chapter == "text"):
-                            print(f"""      <span class="verse_ref">{verse}</span>""", end="&nbsp;", file=g)
-                            print(parts[1], file=g)
-                            print(f"""      <br/>""", file=g)
+                            #print(f"""      <span class="verse_ref">{verse}</span>""", end="&nbsp;", file=g)
+                            print(f""" {parts[1]}<br/>""", file=g)
                         else:
                             if chapter == "text":
                                 print(f"""   <p>{parts[1]}</p>""", file=g)
-
             print("""    </div>""", file=g)
 
             if section is not None:
                 print("""    </div>""", file=g)
             print(FOOTER, file=g)
-
