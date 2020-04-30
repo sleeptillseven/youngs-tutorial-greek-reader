@@ -11,7 +11,7 @@ build-html:	## build HTML files from sources
 
 check-encoding:	## verify encoding of text
 	@echo "running encoding checker..."
-	@validate-text text-validator.toml text/tutorial-greek-main.txt 2>&1 | grep -v TOKEN_REGEXES
+	@validate-text text-validator.toml text/young-tutorial-greek-main.txt 2>&1 | grep -v TOKEN_REGEXES
 
 help:
 	@grep -E '^[0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
