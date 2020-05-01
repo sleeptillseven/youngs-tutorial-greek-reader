@@ -14,8 +14,8 @@ Scan is available on Archive.org: https://archive.org/details/tutorialgreekrea00
 
 ## Progress
 
-* preface: 100% done
-* main text: ![Progress](https://progress-bar.dev/95/)
+* preface: `100%` done
+* main text: `100%` done
 * vocabulary: maybe
 
 ## License
